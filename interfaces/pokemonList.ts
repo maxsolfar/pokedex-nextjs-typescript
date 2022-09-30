@@ -7,7 +7,17 @@ export interface PokemonListResponse {
 
 export interface SinglePokemon {
   name: string;
+  id: number;
+  img: string;
+  types: Type[];
+}
+
+export interface Species {
+  name: string;
   url:  string;
-  id: number,
-  img: string
+}
+
+export interface Type {
+  slot: number;
+  type: Species;
 }
